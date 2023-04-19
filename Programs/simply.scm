@@ -42,7 +42,7 @@
 	(cons cons)
 	(map map)
 	(apply apply))
-    (define (error-printform x)
+    (define (error-printform x) x)
       (if (string? x)
 	  (string-append "\"" x "\"")
 	  x))
